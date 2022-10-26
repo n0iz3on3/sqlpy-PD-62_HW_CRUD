@@ -69,29 +69,29 @@ def change_client(cur, client_id, first_name=None, last_name=None, e_mail=None, 
     if first_name:
         cur.execute("""
                     UPDATE Clients 
-                    SET first_name=%s
-                    WHERE id=%s;
+                       SET first_name=%s
+                     WHERE id=%s;
                     """,   (first_name, client_id))
     
     if phone_number:
         cur.execute("""
                     UPDATE Phones 
-                    SET phone_number=%s
-                    WHERE id=%s;
+                       SET phone_number=%s
+                     WHERE id=%s;
                     """,   (phone_number, client_id))
     
     if last_name:
         cur.execute("""
                     UPDATE Clients 
-                    SET last_name=%s
-                    WHERE id=%s;
+                       SET last_name=%s
+                     WHERE id=%s;
                     """,   (last_name, client_id))
     
     if e_mail:
         cur.execute("""
                     UPDATE Clients 
-                    SET e_mail=%s
-                    WHERE id=%s;
+                       SET e_mail=%s
+                     WHERE id=%s;
                     """,   (e_mail, client_id))
 
 
