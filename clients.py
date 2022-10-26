@@ -143,7 +143,7 @@ def del_table(cur):
 def main():
     print(help)
     while True:
-        with psycopg2.connect(database='clients_db', user='postgres', password='SN33Vf8m') as conn:
+        with psycopg2.connect(database='clients_db', user='postgres', password='...') as conn:
             with conn.cursor() as cur:
                 command = input("Вводите команды по очереди и следите за результатом:\n")
                 if command == "clear":
